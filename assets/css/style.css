@@ -179,10 +179,68 @@ html {
   /*           main-portfolio per desktop         */
   #main-portfolio {
     padding-top: 15px;
+    height: 1900px;
+
+    overflow: hidden;
+
+    /* display: grid;
+    grid-template-columns: 300px 500px 500px; */
+  }
+  #main-portfolio h3 {
+    margin-left: 30px;
+  }
+
+  .container-portfolio {
+    display: grid;
+    grid-template-columns: 200px 1300px;
+    grid-template-rows: 200px 150px 200px;
+  }
+  .portolio-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: -70px;
+    justify-content: flex-end;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .p-portfolio {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 25px;
+    margin-left: 130px;
+    width: 790px;
+  }
+  .portolio-list1 {
+    grid-column: 2/3;
+  }
+  .portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(17, 110px);
+    grid-template-rows: repeat(16, 100px);
+    grid-row: 3/18;
+  }
+  .img:first-child {
+    grid-column: 4/14;
+    grid-row: 1/6;
+  }
+  .img2 {
+    grid-column: 4/8;
+    grid-row: 6/16;
+  }
+  .img3 {
+    grid-row: 6/16;
+
+    gap: 0px;
+  }
+
+  .img4 {
+    position: relative;
+    top: -65px;
+    grid-row: 10/16;
   }
 
   .portolio-list1 li {
-    display: inline-block;
+    display: inline-block !important;
     margin: 5px 10px;
     transition: all 300ms;
     padding: 15px;
